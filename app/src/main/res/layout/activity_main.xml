@@ -1,19 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tabconversor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal">
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-      
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/lblTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="100dp"
+            android:text="TIPO:"/>
+        <Spinner
+            android:id="@+id/spnTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="100dp"
+            android:entries="@array/tipo" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/lblDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="160dp"
+            android:text="DE:"/>
+        <Spinner
+            android:id="@+id/spnDe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="160dp" />
+
+        <TextView
+            android:id="@+id/lbla"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="220dp"
+            android:text="A:"/>
+        <Spinner
+            android:id="@+id/spna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="220dp" />
+
+        <TextView
+            android:id="@+id/lblcantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="280dp"
+            android:text="Cantidad:"/>
+        <EditText
+            android:id="@+id/txtcantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="110dp"
+            android:hint="Cantidad"/>
+        <Button
+            android:id="@+id/btnConvertir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340dp"
+            android:text="Convertir"/>
+        <TextView
+            android:id="@+id/lblrespuesta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Respuesta: ?"
+            android:layout_marginTop="400dp"
+            android:layout_marginLeft="40dp"/>
+
+    </RelativeLayout>
+
+

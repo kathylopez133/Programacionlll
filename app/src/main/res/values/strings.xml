@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Programacionlll</string>
+    <string name="app_name">Conversor de monedas</string>
+    <string-array name="tipo">
+        <item>Monedas</item>
+        <item>Masa</item>
+        <item>Longitud</item>
+        <item>Almacenamiento</item>
+        <item>Tiempo</item>
+    </string-array>
 </resources>
