@@ -1,84 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tabconversor"
+   xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
     tools:context=".MainActivity">
 
-    <TextView
-            android:id="@+id/lblTipo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="100dp"
-            android:text="TIPO:"/>
-        <Spinner
-            android:id="@+id/spnTipo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="100dp"
-            android:entries="@array/tipo" />
+    <EditText
+        android:id="@+id/BuscarProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Buscar Producto"/>
 
-        <TextView
-            android:id="@+id/lblDe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="160dp"
-            android:text="DE:"/>
-        <Spinner
-            android:id="@+id/spnDe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="160dp" />
+    <ListView
+        android:id="@+id/ltsproducto"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 
-        <TextView
-            android:id="@+id/lbla"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="220dp"
-            android:text="A:"/>
-        <Spinner
-            android:id="@+id/spna"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="220dp" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAgregarProductos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+       android:layout_margin="16dp"
+        android:clickable="true"/>
 
-        <TextView
-            android:id="@+id/lblcantidad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="280dp"
-            android:text="Cantidad:"/>
-        <EditText
-            android:id="@+id/txtcantidad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="270dp"
-            android:layout_marginLeft="110dp"
-            android:hint="Cantidad"/>
-        <Button
-            android:id="@+id/btnConvertir"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="340dp"
-            android:text="Convertir"/>
-        <TextView
-            android:id="@+id/lblrespuesta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Respuesta: ?"
-            android:layout_marginTop="400dp"
-            android:layout_marginLeft="40dp"/>
+</RelativeLayout>
 
-    </RelativeLayout>
+
+
 
 
