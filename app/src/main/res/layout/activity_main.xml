@@ -2,83 +2,27 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/tabconversor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
     tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/txtBuscarProducto"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <ListView
+        android:id="@+id/ltsProductosCouchDB"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
-    <TextView
-            android:id="@+id/lblTipo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="100dp"
-            android:text="TIPO:"/>
-        <Spinner
-            android:id="@+id/spnTipo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="100dp"
-            android:entries="@array/tipo" />
-
-        <TextView
-            android:id="@+id/lblDe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="160dp"
-            android:text="DE:"/>
-        <Spinner
-            android:id="@+id/spnDe"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="160dp" />
-
-        <TextView
-            android:id="@+id/lbla"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="220dp"
-            android:text="A:"/>
-        <Spinner
-            android:id="@+id/spna"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="220dp" />
-
-        <TextView
-            android:id="@+id/lblcantidad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="280dp"
-            android:text="Cantidad:"/>
-        <EditText
-            android:id="@+id/txtcantidad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="270dp"
-            android:layout_marginLeft="110dp"
-            android:hint="Cantidad"/>
-        <Button
-            android:id="@+id/btnConvertir"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="340dp"
-            android:text="Convertir"/>
-        <TextView
-            android:id="@+id/lblrespuesta"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Respuesta: ?"
-            android:layout_marginTop="400dp"
-            android:layout_marginLeft="40dp"/>
-
-    </RelativeLayout>
-
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAgregarProductos"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
 
