@@ -5,68 +5,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginLeft="150dp"
-        android:layout_marginTop="100dp"
-        app:srcCompat="@drawable/cajero" />
-
+    tools:context=".registro">
     <EditText
-        android:id="@+id/editTextName"
+        android:id="@+id/txtNombre"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="230dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#E91E63"
         android:hint="Nombre" />
 
-
     <EditText
-        android:id="@+id/editTextEmail"
+        android:id="@+id/txtApellido"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="330dp"
+        android:layout_marginTop="320dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#E91E63"
-        android:hint="Correo electronico" />
-
+        android:hint="Apellido" />
 
     <EditText
-        android:id="@+id/editTextPassword"
+        android:id="@+id/txtEmail"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="400dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#E91E63"
-        android:hint="Contraseña" />
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/txtContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#E91E63"
+        android:hint="Password" />
 
     <Button
-        android:id="@+id/btnregister"
+        android:id="@+id/btnIngresar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="490dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/redondeado"
-        android:onClick="login"
-        android:text="REGISTRAR" />
+        android:text="Register" />
 
     <Button
-        android:id="@+id/btnlogin"
+        android:id="@+id/btnRegresar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="550dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/borde"
-        android:onClick="login"
-        android:text="LOGIN" />
+        android:onClick="regresar"
+        android:text="Atras" />
 
 </RelativeLayout>
