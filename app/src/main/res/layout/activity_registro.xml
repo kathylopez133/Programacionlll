@@ -6,32 +6,13 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondo"
     tools:context=".registro">
-    <EditText
-        android:id="@+id/txtNombre"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="230dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="#E91E63"
-        android:hint="Nombre" />
-
-    <EditText
-        android:id="@+id/txtApellido"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="320dp"
-        android:layout_marginEnd="32dp"
-        android:backgroundTint="#E91E63"
-        android:hint="Apellido" />
 
     <EditText
         android:id="@+id/txtEmail"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="300dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#E91E63"
         android:hint="Email" />
@@ -41,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="480dp"
+        android:layout_marginTop="400dp"
         android:layout_marginEnd="32dp"
         android:backgroundTint="#E91E63"
         android:hint="Password" />
@@ -54,7 +35,8 @@
         android:layout_marginTop="490dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/redondeado"
-        android:text="Register" />
+        android:onClick="principal"
+        android:text="Login" />
 
     <Button
         android:id="@+id/btnRegresar"

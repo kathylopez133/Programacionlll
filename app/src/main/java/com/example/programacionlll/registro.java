@@ -18,4 +18,10 @@ public class registro extends AppCompatActivity {
         startActivity(regresar);
         finish();
     }
+    public void principal(View view){
+        Intent principal = new Intent(registro.this,MainActivity2.class);
+        startActivity(principal);
+        finish();
+
+    }
 }
