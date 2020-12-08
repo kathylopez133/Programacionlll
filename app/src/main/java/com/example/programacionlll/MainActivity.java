@@ -107,11 +107,7 @@ public class MainActivity extends Activity {
         });
 
     }
-  public void login(View view){
-        Intent Login = new  Intent(MainActivity.this, ProfileActivity.class);
-        startActivity(Login);
 
-  }
 
 
 
