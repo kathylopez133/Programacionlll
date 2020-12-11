@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fondo"
     tools:context=".ui.slideshow.SlideshowFragment">
 
 
@@ -11,8 +12,61 @@
         android:id="@+id/txtregistradora"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="150dp"
-
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="125dp"
+        android:textColor="@android:color/black"
+        android:textSize="25sp"
         android:text="REGISTRADORA" />
+
+    <EditText
+        android:id="@+id/NombredeCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Cliente"
+        android:layout_marginTop="90dp"/>
+
+    <EditText
+        android:id="@+id/NombredeProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del Producto"
+        android:layout_marginTop="150dp"/>
+
+    <EditText
+        android:id="@+id/Descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion del Producto"
+        android:layout_marginTop="205dp"/>
+
+    <EditText
+        android:id="@+id/Cantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cantidad del Producto"
+        android:layout_marginTop="260dp"/>
+
+    <EditText
+        android:id="@+id/Precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precio del Producto"
+        android:layout_marginTop="305dp"/>
+
+     <Button
+         android:id="@+id/BtnGuardar"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="360dp"
+         android:background="@drawable/redondeado"
+         android:text="GUARDAR DATOS"/>
+
+    <Button
+        android:id="@+id/BtnMostrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="415dp"
+        android:background="@drawable/redondeado"
+        android:text="MOSTRAR DATOS"/>
+
 </RelativeLayout>

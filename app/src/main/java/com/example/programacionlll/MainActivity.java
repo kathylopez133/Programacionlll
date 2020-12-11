@@ -61,6 +61,7 @@ public class MainActivity extends Activity {
 
                     if (password.length() >= 6){
                         registerUser();
+
                     }
                     else{
                         Toast.makeText(MainActivity.this, "La contraseña debe tener al menos 6 caracteres", Toast.LENGTH_SHORT).show();
@@ -92,6 +93,9 @@ public class MainActivity extends Activity {
                        @Override
                        public void onComplete(@NonNull Task<Void> task2) {
                            if (task2.isSuccessful()){
+                               startActivity(new Intent(MainActivity.this,MainActivity2.class));
+                               finish();
+
 
                            }
                            else {
@@ -107,6 +111,19 @@ public class MainActivity extends Activity {
         });
 
     }
+       ///Metodo boton registrar
+    public void login(View view){
+        Intent Login = new Intent(MainActivity.this, MainActivity2.class);
+        startActivity(Login);
+
+    }
+    public void iniciar (View view){
+        Intent Iniciar = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(Iniciar);
+    }
+
+
+
 
 
 
