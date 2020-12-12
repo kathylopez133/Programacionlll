@@ -60,6 +60,7 @@ public class MainActivity extends Activity {
                 if (!name.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
 
                     if (password.length() >= 6){
+                        startActivity(new Intent(MainActivity.this, MainActivity2.class));
                         registerUser();
 
                     }
@@ -111,17 +112,6 @@ public class MainActivity extends Activity {
         });
 
     }
-       ///Metodo boton registrar
-    public void login(View view){
-        Intent Login = new Intent(MainActivity.this, MainActivity2.class);
-        startActivity(Login);
-
-    }
-    public void iniciar (View view){
-        Intent Iniciar = new Intent(MainActivity.this, MainActivity2.class);
-                startActivity(Iniciar);
-    }
-
 
 
 
